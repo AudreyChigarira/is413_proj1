@@ -2,6 +2,8 @@
     ViewData["Title"] = "Sign Up Page";
 }
 
+@model SignUpGenius.Models.FormModel
+
 <div>
     <h1>Confirm Your Sign Up!</h1>
     <p>Fill out this form to confirm your Layton Utah Temple Tour</p>
@@ -12,25 +14,29 @@
 <!-- Form to type in and submit movies to collection -->
 <form asp-action="SignUpForm" method="post">
     <div>
-        <label>Name:</label>
-        <input />
+        <label asp-for="Time">Time:</label>
+        <label asp-for="Time">@Model.Time</label>
     </div>
     <div>
-        <label>Size:</label>
-        <input />
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" />
     </div>
     <div>
-        <label>Email:</label>
-        <input />
+        <label asp-for="Size">Size:</label>
+        <input asp-for="Size" />
     </div>
     <div>
-        <label>Phone:</label>
-        <input />
+        <label asp-for="Email">Email:</label>
+        <input asp-for="Email" />
     </div>
-    
+    <div>
+        <label asp-for="Phone">Phone:</label>
+        <input asp-for="Phone" />
+    </div>
+
     <br />
-    <button type="submit" id="submit">Submit</button>
+    <button type="submit" id="submit2">Submit</button>
 
     <br /><br />
-    <div asp-validation-summary="All" style="color:red"></div>
+    <!-- <div asp-validation-summary="All" style="color:red"></div> -->
 </form>
