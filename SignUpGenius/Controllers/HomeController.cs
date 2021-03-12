@@ -23,10 +23,38 @@ namespace SignUpGenius.Controllers
             return View();
         }
 
-        public IActionResult SignUp()
+        public IActionResult SignUpPage()
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult SignUpForm()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult SignUpForm(FormModel appResponse)
+        {
+            // Still need to add other functionality in here
+
+            //Validate the model
+            if (ModelState.IsValid)
+            {
+                return View("Index", appResponse);
+            }
+            else
+            {
+                //List out the validation errors without going to another page yet
+                return View();
+            }
+        }
+
+        public IActionResult Appointments()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
