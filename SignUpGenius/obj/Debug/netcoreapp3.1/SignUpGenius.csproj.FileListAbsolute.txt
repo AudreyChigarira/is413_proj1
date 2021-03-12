@@ -35,3 +35,4 @@ C:\Users\colli\OneDrive\Desktop\GitHub\is413_proj1\SignUpGenius\obj\Debug\netcor
 C:\Users\colli\OneDrive\Desktop\GitHub\is413_proj1\SignUpGenius\obj\Debug\netcoreapp3.1\SignUpGenius.pdb
 C:\Users\colli\OneDrive\Desktop\GitHub\is413_proj1\SignUpGenius\obj\Debug\netcoreapp3.1\SignUpGenius.genruntimeconfig.cache
 C:\Users\colli\OneDrive\Desktop\GitHub\is413_proj1\SignUpGenius\obj\Debug\netcoreapp3.1\SignUpGenius.csproj.CopyComplete
+C:\Users\colli\OneDrive\Desktop\GitHub\is413_proj1\SignUpGenius\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
