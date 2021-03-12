@@ -3,21 +3,28 @@
 }
 
 <div>
-    <h1>Choose Your Time Slot</h1>
+    <h1>Sign Up Here!</h1><br />
 </div>
+<br />
+<!-- <link href="~/css/styles.css" rel="stylesheet" /> -->
 
-<link href="~/css/styles.css" rel="stylesheet" />
+<div>
+    <h4>Choose your time slot:</h4>
 
-<!-- Form to type in and submit movies to collection -->
-<form asp-action="SignUpPage" method="post">
-    <div>
-        <label>Time:</label>
-        <input />
-    </div>
-
-    <br />
-    <button type="submit" id="submit">Submit</button>
-
-    <br /><br />
-    <div asp-validation-summary="All" style="color:red"></div>
-</form>
+    <!-- Form to type in and submit movies to collection -->
+    <form asp-action="SignUpPage" method="post">
+        <input type="radio" name="time" id="eight" value="eight">   <label for="eight">8:00 A.M.</label><br>
+        <input type="radio" name="time" id="nine" value="nine">     <label for="nine">9:00 A.M.</label><br>
+        <input type="radio" name="time" id="ten" value="ten">       <label for="ten">10:00 A.M.</label><br>
+        <input type="radio" name="time" id="eleven" value="eleven">  <label for="eleven">11:00 A.M.</label><br>
+        <input type="radio" name="time" id="twelve" value="twelve"> <label for="twelve">12:00 P.M.</label><br>
+        <input type="radio" name="time" id="one" value="one">       <label for="one">1:00 P.M.</label><br>
+        <input type="radio" name="time" id="two" value="two">       <label for="two">2:00 P.M.</label><br>
+        <input type="radio" name="time" id="three" value="three">   <label for="three">3:00 P.M.</label><br>
+        <input type="radio" name="time" id="four" value="four">     <label for="four">4:00 P.M.</label><br>
+        <input type="radio" name="time" id="five" value="five">     <label for="five">5:00 P.M.</label><br>
+        <input type="radio" name="time" id="six" value="six">       <label for="six">6:00 P.M.</label><br>
+        <input type="radio" name="time" id="seven" value="seven">   <label for="seven">7:00 P.M.</label><br>
+        <input type="radio" name="time" id="eight" value="eight">   <label for="eight">8:00 P.M.</label><br>
+    </form>
+</div>
