@@ -23,9 +23,17 @@ namespace SignUpGenius.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult SignUpPage()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult SignUpPage(FormModel appResponse)
+        {
+            TimeTempStorage.AddApplication(appResponse);
+            return View("SignUpForm", appResponse);
         }
 
         [HttpGet]
