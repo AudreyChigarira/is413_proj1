@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Sign Up Page";
+}
+
+<div>
+    <h1>Confirm Your Sign Up!</h1>
+    <p>Fill out this form to confirm your Layton Utah Temple Tour</p>
+</div>
+
+<link href="~/css/styles.css" rel="stylesheet" />
+
+<!-- Form to type in and submit movies to collection -->
+<form asp-action="SignUpForm" method="post">
+    <div>
+        <label>Name:</label>
+        <input />
+    </div>
+    <div>
+        <label>Size:</label>
+        <input />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input />
+    </div>
+    <div>
+        <label>Phone:</label>
+        <input />
+    </div>
+    
+    <br />
+    <button type="submit" id="submit">Submit</button>
+
+    <br /><br />
+    <div asp-validation-summary="All" style="color:red"></div>
+</form>

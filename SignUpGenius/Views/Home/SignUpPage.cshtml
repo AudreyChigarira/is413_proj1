@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Sign Up Page";
+}
+
+<div>
+    <h1>Choose Your Time Slot</h1>
+</div>
+
+<link href="~/css/styles.css" rel="stylesheet" />
+
+<!-- Form to type in and submit movies to collection -->
+<form asp-action="SignUpPage" method="post">
+    <div>
+        <label>Time:</label>
+        <input />
+    </div>
+
+    <br />
+    <button type="submit" id="submit">Submit</button>
+
+    <br /><br />
+    <div asp-validation-summary="All" style="color:red"></div>
+</form>
