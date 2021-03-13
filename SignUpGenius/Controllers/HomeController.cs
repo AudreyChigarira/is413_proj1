@@ -45,17 +45,18 @@ namespace SignUpGenius.Controllers
         public IActionResult SignUpForm(FormModel appResponse)
         {
             // Still need to add other functionality in here
+            return View("Index", appResponse);
 
             //Validate the model
-            if (ModelState.IsValid)
-            {
-                return View("Index", appResponse);
-            }
-            else
-            {
+            //if (ModelState.IsValid)
+            //{
+            //    return View("Index", appResponse);
+            //}
+            //else
+            //{
                 //List out the validation errors without going to another page yet
-                return View();
-            }
+            //    return View();
+            //}
         }
 
         public IActionResult Appointments()
