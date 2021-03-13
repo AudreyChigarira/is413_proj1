@@ -16,9 +16,10 @@ namespace SignUpGenius.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public string Size { get; set; }
+        public int Size { get; set; }
         [Required]
         public string Email { get; set; }
+        [RegularExpression(@"\d{3}-\d{3}-\d{4}", ErrorMessage = "Please enter a valid phone number.")]
         public string? Phone { get; set; }
     }
 }
